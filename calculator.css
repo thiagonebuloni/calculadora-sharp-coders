@@ -1,3 +1,24 @@
+.myself {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.thiago {
+    
+    margin-top: 18px;
+    font-size: 10px;
+    color:#FFFFFF;
+}
+
+.avatar {
+    width: 35px;
+    margin-top: 8px;
+    margin-right: 10px;
+    margin-left: 9px;
+    border-radius: 100%;
+}
+
 button {
     padding: 5.0px;
     margin: 1px 0px;
@@ -111,7 +132,7 @@ hr {
     align-self:auto;
 }
 
-.icon-division {
+/* .icon-division {
     
 }
 
@@ -125,7 +146,7 @@ hr {
 
 .icon-percent {
 
-}
+} */
 
 .last-operation {
     
@@ -134,11 +155,17 @@ hr {
     padding: 3px;
     margin-top: 3px;
     margin-right: 1px;
+    height: 21px;
     border-radius: 2px;
     font-size: 9px;
     color: rgb(66, 66, 66);
     background-color:#bebaba;
     box-shadow: .7px .7px .7px #747474 inset;
+}
+
+main {
+    display: flex;
+    justify-content: start;
 }
 
 .notification-bar {
