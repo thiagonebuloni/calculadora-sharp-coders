@@ -25,9 +25,10 @@ function plus() {
 }
 
 function equals() {
+    
     var last_op = parseInt(document.getElementById("last-operation"));
     var screen = document.getElementById('result-number');
-    screen.innerHTML = parseInt(last_op);
+    screen.innerHTML = last_op.toString();
 }
 
 function home() {

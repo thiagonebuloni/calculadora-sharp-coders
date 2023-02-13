@@ -1,10 +1,14 @@
-.myself {
+
+.nav {
     display: flex;
-    flex-direction: row;
     justify-content: start;
+    position: sticky;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #1b0600 0%, rgba(217, 217, 217, 0) 100%);
 }
 
-.thiago {
+.name {
     
     margin-top: 18px;
     font-size: 10px;
