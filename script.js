@@ -56,10 +56,10 @@ class Calculator {
             case "D":
                 this.processDelOperator();
                 break
-            case "ce":
+            case "CE":
                 this.processClearCurrentOperation();
                 break
-            case "c":
+            case "C":
                 this.processClearOperation();
                 break
             case "=":
