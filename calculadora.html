@@ -32,60 +32,64 @@
                     </div>
                 </div>
                 <div id="calculator">
-                    <div class="last-operation" id="last-operation">√36(36 - 26)(36 - 26)(36 - 20)</div>
+                    <div class="last-operation" id="last-operation"></div>
                         <div class="result-box">
                             <div class="result">
                                 <div class="equal">=</div>
-                                <div class="result-number" id="result-number">36</div>
+                                <div class="result-number" id="result-number"></div>
                             </div>
                         </div>
-                    <div class="calculator-rows">
+                    <div class="calculator-rows" id="calculator-rows">
                         <div class="calculator-row">
-                            <button class="buttons buttons-extra" id="button-c" onClick="clean()">C</button>
-                            <button class="buttons buttons-extra" id="button-plus-minus" onClick="print('+-')">
-                                <img src="assets/more-less.svg" class="button-more-less" width="60%">
+                            <button class="btn btn-extra btn-c">ce</button>
+                            <button class="btn btn-extra btn-plus-minus">c
+                                <!-- <img src="assets/more-less.svg" class="button-more-less" width="60%"> -->
                             </button>
-                            <button class="buttons buttons-extra" id="button-percent" onClick="print('%')">
+                            <button class="btn btn-extra btn-percent">
                                 <img src="assets/percent.svg" class="icon-percent" width="60%">
                             </button>
-                            <button class="buttons buttons-operations" id="button-division" onClick="print('÷')">
-                                <img src="assets/division.svg" class="icon-division" width="60%">
+                            <button class="btn btn-division">/
+                                <!-- <img src="assets/division.svg" class="icon-division" width="60%"> -->
                             </button>
                         </div>
                         <div class="calculator-row">
-                            <button class="buttons" id="calculator-row-1" onClick="print('1')">1</button>
-                            <button class="buttons" id="calculator-row-1" onClick="print('2')">2</button>
-                            <button class="buttons" id="calculator-row-1" onClick="print('3')">3</button>
-                            <button class="buttons buttons-operations" id="button-multiply" onClick="print('x')">
-                                <img src="assets/multiply.svg" class="icon-multiply" width="50%">
+                            <button class="btn row1">1</button>
+                            <button class="btn row1">2</button>
+                            <button class="btn row1">3</button>
+                            <button class="btn btn-multiply">*
+                                <!-- <img src="assets/multiply.svg" class="icon-multiply" width="50%"> -->
                             </button>
                         </div>
                         <div class="calculator-row">
-                            <button class="buttons" id="calculator-row-2" onClick="print('4')">4</button>
-                            <button class="buttons" id="calculator-row-2" onClick="print('5')">5</button>
-                            <button class="buttons" id="calculator-row-2" onClick="print('6')">6</button>
-                            <button class="buttons buttons-operations" id="button-minus" onClick="print('-')">
-                                <img src="assets/minus.svg" class="icon-minus" width="70%">
+                            <button class="btn row2">4</button>
+                            <button class="btn row2">5</button>
+                            <button class="btn row2">6</button>
+                            <button class="btn btn-minus">-
+                                <!-- <img src="assets/minus.svg" class="icon-minus" width="70%"> -->
                             </button>
                         </div>
                         <div class="calculator-row">
-                            <button class="buttons" id="calculator-row-3" onClick="print('7')">7</button>
-                            <button class="buttons" id="calculator-row-3" onClick="print('8')">8</button>
-                            <button class="buttons" id="calculator-row-3" onClick="print('9')">9</button>
-                            <button class="buttons buttons-operations" id="button-plus" onClick="print('+')">
-                                <img src="assets/plus.svg" class="icon-plus" width="80%">
+                            <button class="btn row3">7</button>
+                            <button class="btn row3">8</button>
+                            <button class="btn row3">9</button>
+                            <button class="btn btn-plus">+
+                                <!-- <img src="assets/plus.svg" class="icon-plus" width="80%"> -->
                             </button>
                         </div>
                         <div class="calculator-row">
-                            <button class="zero" onClick="print('0')">0</button>
-                            <button class="buttons buttons-operations" id="button-equals" onClick="equals()">
-                                <img src="assets/equals.svg" class="icon-equals" width="80%"
+                            <button class="btn row4">0</button>
+                            <button class="btn row4">.</button>
+                            <button class="btn row4">D
+                                <!-- <img src="assets/back.svg" class="icon-back" width="80%"> -->
+                            </button>
+                            <button class="btn btn-equals">=
+                                <!-- <img src="assets/equals.svg" class="icon-equals" width="80%" -->
                             </button>
                         </div>
                     </div>
                 </div>
-                <div class="button-home">
-                    <button id="button-home" onClick="home()"></button>
+                <div class="btn-home">
+                    <button id="btn-home" onClick="home()"></button>
                 </div>
             </div>
         </main>

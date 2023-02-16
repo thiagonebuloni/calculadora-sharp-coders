@@ -1,3 +1,175 @@
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+.avatar {
+    width: 35px;
+    margin-top: 8px;
+    margin-right: 10px;
+    margin-left: 9px;
+    border-radius: 100%;
+}
+
+.btn {
+    padding: 5.0px;
+    margin: 1px 1px;
+    width: 18%;
+    height: 18%;
+    border: 10;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%), #333333;
+    box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.01), 0px 7px 7px rgba(0, 0, 0, 0.04), 0px 4px 6px rgba(0, 0, 0, 1), 0px, 2px, 4px rgba(0, 0, 0, 0.26), 0px 0px 2px rgba(0, 0, 0, 0.29), inset 0px 2px 3px rgba(255, 255, 255, 0.06);
+}
+
+.btn:hover {
+    /* background-color: var(--btn-equal); */
+    background-color: rgba(255, 255, 255, 0.50);
+    transition: all .5s;
+}
+
+#btn-home {
+    border: 2px, #FFFFFF;
+    border-radius: 50%;
+    width: 23px;
+    height: 23px;
+    background-color: rgb(7, 7, 7);
+    box-shadow: 0.1px 0.1px 0.1px #ececec inset;
+}
+
+.btn-home {
+    display: flex;
+    justify-content: center;
+    margin: 5px 5px;
+}
+
+.btn-extra {
+    color: black;
+    background-color: #675cfd;
+    
+}
+
+.btn-c {
+    background-color: #5448fc;
+}
+
+.btn-plus-minus {
+    background-color: #675cfd;
+}
+
+.btn-percent {
+    background-color: #877ffc;
+}
+
+.btn-division {
+    background-color: rgb(250, 28, 28);
+}
+
+.btn-division:hover {
+    background-color: rgba(255, 105, 105, 0.8);
+    transition: all .5s;
+}
+
+.btn-multiply {
+    background-color: rgb(252, 44, 44);
+}
+
+.btn-multiply:hover {
+    background-color: rgba(255, 105, 105, 0.8);
+    transition: all .5s;
+}
+
+.btn-minus {
+    background-color: rgb(255, 58, 58);
+}
+
+.btn-minus:hover {
+    background-color: rgba(255, 105, 105, 1);
+    transition: all .5s;
+}
+
+.btn-plus {
+    background-color: rgb(250, 69, 69);
+}
+
+.btn-plus:hover {
+    background-color: rgba(255, 105, 105, 1);
+    transition: all .5s;
+}
+
+.btn-equals {
+    background-color: rgb(248, 89, 89);
+}
+
+.btn-equals:hover {
+    background-color: rgba(255, 105, 105, 1);
+    transition: all .5s;
+}
+
+.btn-row4 {
+    padding: 5.0px 05.3px;;
+    border-radius: 50%;
+    background-color: #505050;
+}
+
+.del {
+    background-color: #505050;
+}
+
+#calculator {
+    margin: 2.5px 2.5px;
+    height: 213px;
+    width: 118px;
+    border-radius: 2%;
+    padding: 1px 5px;
+    background-color: rgb(31, 30, 39);
+}
+
+.calculator-row {
+    margin: 1.2px 0px;
+    padding: 0.5% 0%;
+}
+
+.calculator-rows {
+    margin: 5px 0px;
+    padding: 1% 0%;
+    width: 135px;
+}
+
+
+hr {
+    border-color: #cacaca;
+    background-color: #cacaca;
+    height: 0.001px;
+    width: 30px;
+}
+
+.icon-plus-minus {
+    align-self:auto;
+}
+
+.last-operation {
+    
+    display: flex;
+    justify-content: end;
+    padding: 3px;
+    margin-top: 3px;
+    margin-right: 1px;
+    height: 15px;
+    border-radius: 2px;
+    font-size: 12px;
+    color: rgb(66, 66, 66);
+    background-color:#bebaba;
+    box-shadow: .7px .7px .7px #747474 inset;
+}
+
+main {
+    display: flex;
+    justify-content: start;
+}
 
 .nav {
     display: flex;
@@ -15,162 +187,6 @@
     color:#FFFFFF;
 }
 
-.avatar {
-    width: 35px;
-    margin-top: 8px;
-    margin-right: 10px;
-    margin-left: 9px;
-    border-radius: 100%;
-}
-
-button {
-    padding: 5.0px;
-    margin: 1px 0px;
-    width: 18%;
-    height: 14%;
-    border: 0;
-    color: white;
-    border-radius: 30%;
-    background-color: #333333;
-    box-shadow: 1px 1px 1px #101010;
-}
-
-#button-home {
-    border: 2px, #FFFFFF;
-    border-radius: 50%;
-    width: 23px;
-    height: 23px;
-    background-color: rgb(7, 7, 7);
-    box-shadow: 0.1px 0.1px 2px #ececec inset;
-}
-
-.button-home {
-    display: flex;
-    justify-content: center;
-    margin: 5px 5px;
-}
-
-.buttons-extra {
-    color: black;
-    background-color: #675cfd;
-    
-}
-
-#button-c {
-    background-color: #5448fc;
-}
-
-#button-plus-minus {
-    background-color: #675cfd;
-}
-
-#button-percent {
-    background-color: #877ffc;
-}
-
-#button-division {
-    background-color: rgb(250, 28, 28);
-}
-
-#button-multiply {
-    background-color: rgb(252, 44, 44);
-}
-
-#button-minus {
-    background-color: rgb(255, 58, 58);
-}
-
-#button-plus {
-    background-color: rgb(250, 69, 69);
-}
-
-#button-equals {
-    background-color: rgb(248, 89, 89);
-}
-
-
-.buttons-operations {
-    background-color: rgb(255, 58, 58);
-}
-
-#calculator {
-    margin: 2.5px 2.5px;
-    width: 110px;
-    height: 213px;
-    border-radius: 2%;
-    padding: 1px 5px;
-    background-color: rgb(31, 30, 39);
-}
-
-.calculator-row {
-    margin: 1.2px 0px;
-    padding: 0.5% 0%;
-}
-
-.calculator-rows {
-    margin: 5px 0px;
-    padding: 1% 0%;
-    width: 135px;
-}
-
-#calculator-row-1 {
-    background-color: #303030;
-}
-
-#calculator-row-2 {
-    background-color: #333333;
-}
-
-#calculator-row-3 {
-    background-color: #404040;
-}
-
-hr {
-    border-color: #cacaca;
-    background-color: #cacaca;
-    height: 0.001px;
-    width: 30px;
-}
-
-.icon-plus-minus {
-    align-self:auto;
-}
-
-/* .icon-division {
-    
-}
-
-.icon-minus {
-
-}
-
-.icon-equals {
-
-}
-
-.icon-percent {
-
-} */
-
-.last-operation {
-    
-    display: flex;
-    justify-content: end;
-    padding: 3px;
-    margin-top: 3px;
-    margin-right: 1px;
-    height: 21px;
-    border-radius: 2px;
-    font-size: 9px;
-    color: rgb(66, 66, 66);
-    background-color:#bebaba;
-    box-shadow: .7px .7px .7px #747474 inset;
-}
-
-main {
-    display: flex;
-    justify-content: start;
-}
 
 .notification-bar {
     display: flex;
@@ -200,9 +216,16 @@ main {
     border-radius: 15px;
     padding: 5px 1.5px 2px;
     height: 280px;
-    width: 126px;
+    width: 133px;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
     background-color: rgb(5, 5, 5);
-    box-shadow:  10px 10px 20px #221614;
+    box-shadow: 5px 6px 11px 2px;
+    /* box-shadow:  10px 10px 20px #221614; */
 }
 
 .result {
@@ -211,19 +234,27 @@ main {
     margin-left: 5px;
     margin-right: 5px;
     color: #FFFFFF;
+    font-size: 20px;
 }
 
 .result-box {
     margin-top: 5px;
-    width: 110px;
+    width: 115px;
     border-radius: 5%;
     background-color: #101010;
     box-shadow: 1px 1px 1px #3d3d3d inset;
 }
 
-.zero {
-    padding: 5.0px 40.3px;;
-    border-radius: 8%;
-    background-color: #505050;
+.row1 {
+    background-color: #303030;
 }
+
+.row2 {
+    background-color: #333333;
+}
+
+.row3 {
+    background-color: #404040;
+}
+
 
