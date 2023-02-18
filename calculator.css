@@ -3,11 +3,6 @@
     padding: 0;
 }
 
-body {
-    height: 100%;
-    width: 100%;
-}
-
 .avatar {
     width: 50px;
     height: 50px;
@@ -17,6 +12,22 @@ body {
     border-radius: 100%;
 }
 
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.body-backgroundcolor-home {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 36%, rgba(0,212,255,1) 100%);
+    background-repeat: no-repeat;
+    opacity: 50%;
+}
+
+
 .btn {
     padding: 5.0px;
     margin: 1px 1px;
@@ -24,14 +35,40 @@ body {
     height: 30%;
     border: 10;
     color: white;
+    cursor: pointer;
     border: none;
     border-radius: 50%;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%), #333333;
     box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.01), 0px 7px 7px rgba(0, 0, 0, 0.04), 0px 4px 6px rgba(0, 0, 0, 1), 0px, 2px, 4px rgba(0, 0, 0, 0.26), 0px 0px 2px rgba(0, 0, 0, 0.29), inset 0px 2px 3px rgba(255, 255, 255, 0.06);
 }
 
+.btn:active {
+    animation: press 0.2s 1 linear;
+    animation: bounce 0.2s 1 linear;
+}
+
+@keyframes press {
+    0% {
+      transform: scale(0.92);
+    }
+    50% {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(0.92);
+    }
+  }
+  @keyframes bounce {
+    50% {
+      transform: rotate(0eg) ;
+    }
+    to {
+      transform: scale(0.92) rotate(-0deg);
+      opacity: 100;
+    }
+  }
+
 .btn:hover {
-    /* background-color: var(--btn-equal); */
     background-color: rgba(255, 255, 255, 0.50);
     transition: all .5s;
 }
@@ -51,9 +88,12 @@ body {
     margin: 5px 5px;
 }
 
-#btn-home:hover {
+
+
+#btn-home:hover{
     background: linear-gradient(120deg, rgba(197, 197, 197, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%), #3d3d3d;
     transition: all .2s;
+    cursor:crosshair;
 }
 
 .btn-extra {
@@ -210,7 +250,7 @@ main {
 
 .nav:hover {
     background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(99, 50, 30) 35%, rgba(0,212,255,0) 100%);
+    background: linear-gradient(180deg, rgb(58, 20, 5) 0%, rgb(58, 34, 25) 35%, rgba(0,212,255,0) 100%);
     transition: all .5s;
 }
 
@@ -220,6 +260,53 @@ main {
     color:#FFFFFF;
 }
 
+.notification {
+    height: 0px;
+    width: 133px;
+    display: flex;
+    border-radius: 5px;
+    background-color: #eedcd7;
+    position: absolute;
+    top: 6%;
+    left: 5%;
+    box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.01), 0px 7px 7px rgba(0, 0, 0, 0.04), 0px 4px 6px rgba(0, 0, 0, 1), 0px, 2px, 4px rgba(0, 0, 0, 0.26), 0px 0px 2px rgba(0, 0, 0, 0.29), inset 0px 2px 3px rgba(255, 255, 255, 0.06);
+    opacity: 0%;
+    rotate: 0deg;
+    transition: height 0.3s ease-in-out;
+}
+
+.notification:hover {
+    height: 35px;
+    opacity: 100%;
+}
+
+@keyframes example {
+    0% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+.notification-avatar {
+    width: 22px;
+    height: 22px;
+    border-radius: 50px;
+    border: solid rgb(148, 147, 147) 0.5px;
+    margin: 0.4em 0.2em;
+    opacity: 100%;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.notification-name {
+    color: #1b0600;
+    font-size: 0.7em;
+    padding: 1.1em 0.5em;
+}
 
 .notification-bar {
     display: flex;
@@ -259,6 +346,11 @@ main {
     background-color: rgb(5, 5, 5);
     box-shadow: 5px 6px 11px 2px;
     /* box-shadow:  10px 10px 20px #221614; */
+}
+
+.phone + .notification:hover {
+    animation-name: example;
+    animation-duration: .1s;
 }
 
 .result {

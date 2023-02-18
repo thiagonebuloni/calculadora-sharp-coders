@@ -143,3 +143,29 @@ buttons.forEach((btn) => {
         }
     })
 })
+
+// function notification() {
+//     document.body.classList.toggle("notification");
+//     // document.body.classList.toggle("nav-home:hover");
+// }
+
+// const alertPlaceholder = document.getElementById('alert')
+
+// const alert = (message, type) => {
+//   const wrapper = document.createElement('div')
+//   wrapper.innerHTML = [
+//     `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+//     `   <div>${message}</div>`,
+//     '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+//     '</div>'
+//   ].join('')
+
+//   alertPlaceholder.append(wrapper)
+// }
+
+// const alertTrigger = document.getElementById('btn-home')
+// if (alertTrigger) {
+//   alertTrigger.addEventListener('click', () => {
+//     document.body.classList.toggle("alert");
+//   })
+// }
