@@ -258,12 +258,12 @@ main {
     margin-top: 18px;
     font-size: 20px;
     color:#FFFFFF;
+    transition: opacity .5s;
 }
 
 .notification {
     height: 0px;
     width: 133px;
-    display: flex;
     border-radius: 5px;
     background-color: #eedcd7;
     position: absolute;
@@ -271,25 +271,32 @@ main {
     left: 5%;
     box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.01), 0px 7px 7px rgba(0, 0, 0, 0.04), 0px 4px 6px rgba(0, 0, 0, 1), 0px, 2px, 4px rgba(0, 0, 0, 0.26), 0px 0px 2px rgba(0, 0, 0, 0.29), inset 0px 2px 3px rgba(255, 255, 255, 0.06);
     opacity: 0%;
-    rotate: 0deg;
-    transition: height 0.3s ease-in-out;
 }
 
 .notification:hover {
-    height: 35px;
+    height: 43px;
     opacity: 100%;
+    transition: height .5s;
 }
 
-@keyframes example {
-    0% {
-        transform: rotate(-5deg);
-    }
-    50% {
-        transform: rotate(5deg);
-    }
-    100% {
-        transform: rotate(-5deg);
-    }
+audio {
+    display: block;
+}
+
+.notification:hover + audio:active {
+    display: block;
+}
+
+.box {
+    opacity: 0;
+    display: flex;
+}
+
+
+.box:hover {
+    opacity: 100%;
+    margin-top: -20px;
+    transition: opacity .9s;
 }
 
 .notification-avatar {
@@ -297,7 +304,7 @@ main {
     height: 22px;
     border-radius: 50px;
     border: solid rgb(148, 147, 147) 0.5px;
-    margin: 0.4em 0.2em;
+    margin: 1.8em 0.2em;
     opacity: 100%;
     transition: opacity 0.2s ease-in-out;
 }
@@ -305,7 +312,7 @@ main {
 .notification-name {
     color: #1b0600;
     font-size: 0.7em;
-    padding: 1.1em 0.5em;
+    padding: 3.1em 0.5em;
 }
 
 .notification-bar {
